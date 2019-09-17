@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/forontEndLogic.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Lent Money</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <table id="entryTable"
+                       class="table table-bordered
+                 table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Friends name</th>
+                            <th>Date of lent</th>
+                            <th>Amount</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                </table>
+                <p>Total amount: <span id="totalAmount"></span></p>
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Friends Name
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="friendName">Name</label>
+                            <input type="text" id="friendName"
+                                   class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="introdate">
+                                Date
+                            </label>
+                            <input type="date" id="introdate"
+                                   class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input  id="amount"
+                                   class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="panel-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="button" id="updateButton"
+                        class="btn btn-primary"
+                        onclick="updateClick();">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+               <ul id="items">
+
+               </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+</html>

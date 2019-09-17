@@ -1,0 +1,19 @@
+﻿
+<h1>THis is the title</h1>
+@model IEnumerable<LentEntry>
+@{
+    ViewData["Title"] = "LentAPIIndex";
+}
+
+
+<h2>LentAPIIndex</h2>
+
+
+<ul>
+    @foreach (LentEntry lent in Model)
+    {
+        <li>@lent.Name</li>
+        <li>@lent.Amount</li>
+        <li>@lent.LentDate</li>
+    }
+</ul>
